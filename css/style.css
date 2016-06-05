@@ -6,23 +6,15 @@ html, body {
   height: 100%;
 }
 
-.container {
-  text-align: center;
-  width: 100%;
-  top: 50%;
-}
-
-.toggle {
-  margin: 4px;
-}
-
 .toggle {
   box-shadow: inset 0 0 35px 5px rgba(0, 0, 0, 0.25), inset 0 2px 1px 1px rgba(255, 255, 255, 0.9), inset 0 -2px 1px 0 rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   background: #ccd0d4;
-  position: absolute;
+  position: relative;
   height: 24vw;
   width: 25vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 .toggle:before {
   box-shadow: 0 0 17.5px 8.75px #fff;
@@ -95,4 +87,36 @@ html, body {
   margin-top: 22.5%;
   font-size: 8vw;
   color: rgba(0, 0, 0, 0.4);
+}
+
+.center{
+  text-align: center
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+.image-title{
+  width: 100%;
+  margin-bottom: 1vw;
+}
+
+.google-play{
+  text-align: center;
+  width: 50%;
+  margin: 5% 25%;
+}
+
+@media (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
+  .toggle{
+    margin-top: 40vw;
+  }
 }
